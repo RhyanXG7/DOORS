@@ -6578,10 +6578,8 @@ local OtherGroupbox = Tabs.lobby:AddRightGroupbox("Other") do
         Script.CreateElevator:FireServer(data)
     end)
 end
-######
-######
 if wax.shared.ExecutorSupport["_SupportsFileSystem"] then
-    local PresetGroupbox = Tabs.Mai:AddLeftGroupbox("Presets") do
+    local PresetGroupbox = Tabs.lobby:AddLeftGroupbox("Presets") do
         PresetGroupbox:AddInput('Elevator_PresetName', { Text = 'Preset name' })
         PresetGroupbox:AddButton({
             Text = "Create Preset",
@@ -6767,7 +6765,9 @@ end):AddButton("Copy Link", function()
 end)
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
 
-CreditsGroup:AddLabel("Developers:")
+CreditsGroup:AddLabel("Rhyan?")
+CreditsGroup:AddLabel("Rhyan57 - Dono")                      
+CreditsGroup:AddLabel("Developers(idiots):")
 CreditsGroup:AddLabel("upio - owner")
 CreditsGroup:AddLabel("deividcomsono - main script dev")
 CreditsGroup:AddLabel("mstudio45")
